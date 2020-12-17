@@ -18,7 +18,8 @@ namespace LocalMarkt.WebApi.Controllers
         {
             _mediator = mediator;
         }
-
+        [HttpGet]
+        public async Task<IActionResult> GetProductsByCategory([FromQuery] int categoryId) => Ok(await _mediator.Send(new GetProductsByCategory { CategoryId = categoryId }));
         [HttpGet]
         public async Task<IActionResult> Products() => Ok(await _mediator.Send(new GetProducts()));
         [HttpPost]

@@ -16,6 +16,7 @@ namespace LocalMarkt.Persistence.DbContexts
 
         }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
             foreach (var entry in ChangeTracker.Entries<AuditableDbEntity>())

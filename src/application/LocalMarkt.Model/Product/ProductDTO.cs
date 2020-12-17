@@ -9,5 +9,6 @@ namespace LocalMarkt.Model.Product
     public class ProductDTO : BaseDTO
     {
         public string Name { get; set; }
+        public int CategoryId { get; set; }
     }
 }
