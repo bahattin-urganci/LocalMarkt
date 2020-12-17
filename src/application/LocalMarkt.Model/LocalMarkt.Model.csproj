@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LocalMarkt.Common\LocalMarkt.Common.csproj" />
+    <ProjectReference Include="..\LocalMarkt.Domain\LocalMarkt.Domain.csproj" />
+    <ProjectReference Include="..\LocalMarkt.Infrastructure\LocalMarkt.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

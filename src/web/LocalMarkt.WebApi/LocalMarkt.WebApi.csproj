@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GenerateRuntimeConfigurationFiles>True</GenerateRuntimeConfigurationFiles>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\application\LocalMarkt.Application\LocalMarkt.Application.csproj" />
+    <ProjectReference Include="..\..\Application\LocalMarkt.Common\LocalMarkt.Common.csproj" />
+    <ProjectReference Include="..\..\application\LocalMarkt.Infrastructure\LocalMarkt.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\application\LocalMarkt.Model\LocalMarkt.Model.csproj" />
+    <ProjectReference Include="..\..\application\LocalMarkt.Persistence\LocalMarkt.Persistence.csproj" />
+  </ItemGroup>
+
+
+</Project>
